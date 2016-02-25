@@ -1,0 +1,41 @@
+Roadmap
+---
+
+ [ ] Window management
+    - Store position, size [] standalone [-] windowed
+   [ ] multiple windows
+ [ ] Layouting
+   [+] Linebreaks with tags
+   [+] Scrolling
+ [ ] Date support
+   [ ] Tagging dates via //16-02-29
+     [ ] Dates in context: //28 //'8 //Feb //-3 //+2
+     [ ] Date references: ->03-01
+     [ ] Special dates: //urgent //today //soon //later //maybe
+ [ ] Reporting ...
+ 
+Completed
+---
+
+ [+] Task types 
+    - . () !todo task () waiting  [] !waiting waiting (tag) [] !inbox inbox
+ [+] Task states
+    - task [+] done [-] canceled [>] moved
+    - waiting (+) done (-) canceled (>) moved
+    - inbox [+] !in done [-] !in canceled [>] !in moved
+ [+] tags: !call !chat !email !mail !www !any
+    - . !! !1 !2 !3 !4 !5 !6 !7 !8
+    - . $home $work $way #any $any @any
+	- . @f1 @f1/r @f1/o @f1/y @f1/l @f1/g @f1/b @f1/v @f1/p
+	- . @f2 @f2/r @f2/o @f2/y @f2/l @f2/g @f2/b @f2/v @f2/p
+	- . @m1 @m1/r @m1/o @m1/y @m1/l @m1/g @m1/b @m1/v @m1/p
+    - #foo !- canceled #bar !! tags
+ [+] Markdown parsing and rendering
+    - Simple lists, text, *emph* **strong** ***both***
+    * Events
+    - [+] Lists with tasks
+   [+] Task lists
+   (+) Shapes
+   [+] !! tag support #foo
+     - Normal text is not broken! 15% $2.99
+   [+] $work . !call explicit line start

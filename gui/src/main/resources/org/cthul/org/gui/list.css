@@ -1,0 +1,152 @@
+.standalone {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.standalone:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 7;
+    -fx-border-color: #777;
+    -fx-border-radius: 7;
+}
+
+.standalone #contentPane {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.85), 6, 0.9, 0, 0);
+}
+
+.standalone:hover #contentPane {
+    -fx-effect: dropshadow(one-pass-box, transparent, 0, 1, 0, 0);
+}
+
+.windowed {
+    -fx-border-color: white;
+    -fx-background-color: white;
+}
+
+.co-scroll-track {
+    -fx-background-color: rgba(0,0,0,0.5);
+    -fx-background-radius: 3;
+    -fx-opacity: 0.65;
+}
+
+.co-scroll-bar {
+    -fx-background-color: white;
+    -fx-background-radius: 3;
+    -fx-pref-width: 4;
+    -fx-border-color: rgba(0,0,0,0.5);
+    -fx-border-radius: 3;
+/*    -fx-fill: rgba(255, 255, 255, 0.75);
+    -fx-arc-height: 3;
+    -fx-arc-width: 3;*/
+}
+
+.standalone:hover .co-scroll-track, .windowed .co-scroll-track {
+    -fx-background-color: #aaa;
+/*    -fx-border-color: #777;
+    -fx-border-radius: 3;*/
+}
+
+.standalone:hover .co-scroll-bar, .windowed .co-scroll-bar {
+    -fx-background-color: #333;
+    -fx-pref-width: 10;
+}
+
+/*.scroll-pane, .scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scroll-bar {
+   -fx-background-color: transparent;
+}
+
+.standalone .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.standalone .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-insets: 3, 0, 0;
+}
+
+.standalone:hover .thumb {
+    -fx-background-color: #777;
+    -fx-background-insets: 0;
+}
+
+.standalone .increment-button, .standalone .decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: null;
+    visibility: hidden;
+    -fx-padding: 0;
+    
+}
+
+.standalone:hover .increment-button, .standalone:hover .decrement-button {
+    visibility: visible;
+    -fx-padding: 8 2 8 2;
+}*/
+
+.standalone .mini-button, .resize {
+    visibility: hidden;
+}
+
+.standalone:hover .mini-button, .unpinned.standalone:hover .resize {
+    visibility: visible;
+}
+
+.mini-button:hover {
+    -fx-border-color: #777;
+}
+
+#btnMove {
+    -fx-background-image: url("img/close.png");
+    -fx-background-size: cover;
+}
+
+#btnClose {
+    -fx-background-image: url("img/close.png");
+    -fx-background-size: cover;
+}
+
+#btnFrame {
+    -fx-background-image: url("img/frame.png");
+    -fx-background-size: cover;
+}
+
+.unpinned #btnPin {
+    -fx-background-image: url("img/unpinned.png");
+    -fx-background-size: cover;
+}
+
+.pinned #btnPin {
+    -fx-background-image: url("img/pinned.png");
+    -fx-background-size: cover;
+}
+
+.windowed #btnPin {
+    visibility: hidden;
+}
+
+#btnEdit {
+    -fx-background-image: url("img/edit.png");
+    -fx-background-size: cover;
+}
+
+#btnOptions {
+    -fx-background-image: url("img/options.png");
+    -fx-background-size: cover;
+}
+
+#btnResizeLeft {
+    -fx-background-image: url("img/resizeLeft.png");
+    -fx-background-size: cover;
+    -fx-cursor: ne-resize;
+}
+
+#btnResizeRight {
+    -fx-background-image: url("img/resizeRight.png");
+    -fx-background-size: cover;
+    -fx-cursor: nw-resize;
+}

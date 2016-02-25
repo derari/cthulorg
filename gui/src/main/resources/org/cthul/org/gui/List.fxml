@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="300.0" prefWidth="200.0" styleClass="mainFxmlClass" fx:controller="org.cthul.org.gui.ListController">
+    <stylesheets>
+        <URL value="@/org/cthul/org/gui/style.css"/>
+        <URL value="@/org/cthul/org/gui/list.css"/>
+    </stylesheets>
+    <children>
+        <!--
+        <ScrollPane fx:id="scrollPane">
+            <AnchorPane.leftAnchor>0</AnchorPane.leftAnchor>
+            <AnchorPane.rightAnchor>0</AnchorPane.rightAnchor>
+            <AnchorPane.topAnchor>13</AnchorPane.topAnchor>
+            <AnchorPane.bottomAnchor>10</AnchorPane.bottomAnchor>
+            <content>
+                <GridPane fx:id="grid" styleClass="content-grid">
+                </GridPane>
+            </content>
+        </ScrollPane>
+        -->
+        
+        <StackPane fx:id="scrollPane">
+            <AnchorPane.leftAnchor>0</AnchorPane.leftAnchor>
+            <AnchorPane.rightAnchor>0</AnchorPane.rightAnchor>
+            <AnchorPane.topAnchor>15</AnchorPane.topAnchor>
+            <AnchorPane.bottomAnchor>15</AnchorPane.bottomAnchor>
+            <!--<columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" fillWidth="true" /> 
+                <ColumnConstraints prefWidth="10" /> 
+            </columnConstraints>-->
+            <children>
+                <StackPane fx:id="contentPane" id="contentPane" maxWidth="${scrollPane.width-10}">
+                    <StackPane.alignment>TOP_RIGHT</StackPane.alignment>
+                    <Pane fx:id="clipPane">
+                        <GridPane fx:id="grid" prefWidth="${clipPane.width}">
+                        </GridPane>
+                        <clip>
+                            <Rectangle fx:id="clipRect" x="0" y="0" width="${clipPane.width}"/>
+                        </clip>
+                    </Pane>
+                </StackPane>
+                <StackPane fx:id="scrollTrack" styleClass="co-scroll-track" maxWidth="${scrollBar.prefWidth}">
+                    <StackPane.alignment>TOP_LEFT</StackPane.alignment>
+                    <Pane fx:id="scrollBar" styleClass="co-scroll-bar">
+                        <StackPane.alignment>TOP_CENTER</StackPane.alignment>
+                    </Pane>
+                </StackPane>
+            </children>
+        </StackPane>
+        
+        <Pane prefWidth="12" prefHeight="12" id="btnOptions" styleClass="mini-button" onMouseClicked="#optionsClicked" >
+            <AnchorPane.leftAnchor>3</AnchorPane.leftAnchor>
+            <AnchorPane.topAnchor>1</AnchorPane.topAnchor>
+        </Pane> 
+        <Pane prefWidth="12" prefHeight="12" id="btnEdit" styleClass="mini-button" onMouseClicked="#editClicked" >
+            <AnchorPane.leftAnchor>17</AnchorPane.leftAnchor>
+            <AnchorPane.topAnchor>1</AnchorPane.topAnchor>
+        </Pane> 
+        <Pane prefWidth="12" prefHeight="12" id="btnClose" styleClass="mini-button" onMouseClicked="#closeClicked" >
+            <AnchorPane.rightAnchor>3</AnchorPane.rightAnchor>
+            <AnchorPane.topAnchor>1</AnchorPane.topAnchor>
+        </Pane> 
+        <Pane prefWidth="12" prefHeight="12" id="btnFrame" styleClass="mini-button" onMouseClicked="#frameClicked" >
+            <AnchorPane.rightAnchor>17</AnchorPane.rightAnchor>
+            <AnchorPane.topAnchor>1</AnchorPane.topAnchor>
+        </Pane> 
+        <Pane prefWidth="12" prefHeight="12" id="btnPin" styleClass="mini-button" onMouseClicked="#pinClicked" >
+            <AnchorPane.rightAnchor>31</AnchorPane.rightAnchor>
+            <AnchorPane.topAnchor>1</AnchorPane.topAnchor>
+        </Pane> 
+        <Pane prefWidth="12" prefHeight="12" id="btnResizeLeft" styleClass="resize">
+            <AnchorPane.leftAnchor>0</AnchorPane.leftAnchor>
+            <AnchorPane.bottomAnchor>0</AnchorPane.bottomAnchor>
+        </Pane> 
+        <Pane prefWidth="12" prefHeight="12" id="btnResizeRight" styleClass="resize">
+            <AnchorPane.rightAnchor>0</AnchorPane.rightAnchor>
+            <AnchorPane.bottomAnchor>0</AnchorPane.bottomAnchor>
+        </Pane> 
+    </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="300.0" prefWidth="200.0" styleClass="mainFxmlClass" fx:controller="org.cthul.org.gui.OverviewController">
+    <stylesheets>
+        <URL value="@/org/cthul/org/gui/style.css"/>
+    </stylesheets>
+    <children>
+        <VBox id="vbox">
+            
+        </VBox>
+    </children>
+</AnchorPane>

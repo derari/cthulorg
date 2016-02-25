@@ -1,0 +1,21 @@
+21/chat.png - chat by Michal Beno*
+21/email.png - envelope by Herbert Spencer*
+21/mail.png - envelope by Herbert Spencer*
+21/phone.png - Telephone by Thomas Le Bas*
+21/www.png - earth by Ana María Lora Macias*
+
+24/home.png - Home by Muhamad Ulum*
+24/work.png - Computer by Creative Stall*
+24/way.png - route by Alex Podolsky*
+
+40/** - user by JM Waideaswaran*
+
+00/**
+Ok by Aha-Soft*
+Arrow by Aha-Soft*
+erase by Aha-Soft*
+
+unpinned.png - Thumbtack by Michela Tannoia*
+pinned.png - Pin by Diego Naive*
+
+* from the Noun Project https://thenounproject.com/

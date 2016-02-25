@@ -1,0 +1,25 @@
+.task {
+}
+
+.canceled {
+    -fx-strikethrough: true;
+    -fx-fill: gray;
+}
+
+.tag.canceled {
+    -fx-opacity: 0.4;
+}
+
+.emph {
+    -fx-font-weight: bold;
+}
+
+.strong {
+    -fx-underline: true;
+}
+
+.temporal {
+    -fx-border-color: rgba(0, 0, 0, 0.5);
+    -fx-border-radius: 3;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
