@@ -29,6 +29,7 @@ Completed
 	- . @f1 @f1/r @f1/o @f1/y @f1/l @f1/g @f1/b @f1/v @f1/p
 	- . @f2 @f2/r @f2/o @f2/y @f2/l @f2/g @f2/b @f2/v @f2/p
 	- . @m1 @m1/r @m1/o @m1/y @m1/l @m1/g @m1/b @m1/v @m1/p
+	- . @m2 @m2/r @m2/o @m2/y @m2/l @m2/g @m2/b @m2/v @m2/p
     - #foo !- canceled #bar !! tags
  [+] Markdown parsing and rendering
     - Simple lists, text, *emph* **strong** ***both***
